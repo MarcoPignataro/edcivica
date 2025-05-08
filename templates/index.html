@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block titolo %}{% endblock %}</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"&gt;>
+</head>
+<body>
+  <div class="w3-bar w3-blue">
+    <size =5>
+      <a href="{{url_for('home')}}" class="w3-bar-item w3-button">Home</a>
+      <a href="{{url_for('pagoPA')}}" class="w3-bar-item w3-button">pagoPA</a>
+  </div>
+  {% block Intestazione %}{% endblock %}
+</body>
+</html>
