@@ -5,7 +5,13 @@ app = Flask(__name__)
 @app.route("/home")
 def home():
     return render_template("home.html")
-@app.route(pagoPa)
-def pagoPa():
-    return render_template("pagoPa.html")
+
+@app.route("/pagoPA")
+def pagoPA():
+    return render_template("pagoPA.html")
+@app.route("/assistenza")
+def assistenza():
+    return render_template("assistenza.html")
+
+
 app.run(debug=True)
