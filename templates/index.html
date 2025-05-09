@@ -6,10 +6,11 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"&gt;>
 </head>
 <body>
-  <div class="w3-bar w3-blue">
-      <a href="{{url_for('home')}}" class="w3-bar-item w3-button">Home</a>
-      <a href="{{url_for('pagoPA')}}" class="w3-bar-item w3-button">pagoPA</a>
-      <a href="{{url_for('assistenza')}}" class="w3-bar-item w3-button">Assistenza e Contatti</a>
+  <div class="w3-bar" style="background-color: #1e90ff;">
+      <a href="{{url_for('home')}}" class="w3-bar-item w3-button color: white"style =color:white>Home</a>
+      <a href="{{url_for('pagoPA')}}" class="w3-bar-item w3-button color: white"style =color:white>pagoPA</a>
+      <a href="{{url_for('assistenza')}}" class="w3-bar-item w3-button" style =color:white>Assistenza e Contatti</a>
+      <a href="{{url_for('login')}}" class="w3-bar-item w3-button color: white"style =color:white>Login</a>
   </div>
   {% block Intestazione %}{% endblock %}
 </body>

@@ -9,9 +9,13 @@ def home():
 @app.route("/pagoPA")
 def pagoPA():
     return render_template("pagoPA.html")
+
 @app.route("/assistenza")
 def assistenza():
     return render_template("assistenza.html")
 
+@app.route("/login")
+def login():
+    return render_template("login.html")
 
 app.run(debug=True)
