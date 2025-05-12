@@ -9,7 +9,7 @@
   <h1>Sei tu a scegliere dove pagare!</h1>
     <p>Con pagoPA puoi gestire i tuoi pagamenti verso la Pubblica Amministrazione in modo semplice e immediato, sui canali fisici e su quelli online: verifica le opzioni disponibili e scegli quelle più adatte alle tue esigenze.</p>
   <div style="display: flex; align-items: center;">
-  <h1 style="margin-right: 10px;">Paga con IO</h1>
+  <h1 style="margin-right: 10px;">Paga con IO</h1> 
   <img src="{{ url_for('static', filename='io.png') }}" alt="Logo" width="60">
   </div> 
   
@@ -19,6 +19,7 @@
     <li>Conserva le ricevute in un unico posto</li>
     <li>Controlla lo stato dei tuoi pagamenti</li>
     <li>Ricevi notifiche sui pagamenti in scadenza</li>
+    <a role="button" href="https://io.italia.it/" title="Scarica l'app">Scarica l'app</a>
   </ul>
   <div>
     <h1>Non hai l'app? Paga online</h1>
@@ -53,20 +54,20 @@
   <h2>Paga sul Territorio</h2>
   </u>
   
-  
+  <img src="{{ url_for('static', filename='banca.svg') }}" alt="Logo" width="40">
   <h3>In banca</h3>
   <p>Presso le filiali aderenti o gli sportelli ATM abilitati.</p>
   
   
-  
+  <img src="{{ url_for('static', filename='posta_privata.svg') }}" alt="Logo" width="40">
   <h3>In ufficio postale</h3>
   <p>Utilizzando indifferentemente il codice QR pagoPA o il bollettino postale PA.</p>
 
-
+  <img src="{{ url_for('static', filename='esercenti.svg') }}" alt="Logo" width="40">
   <h3>Presso i punti vendita abilitati</h3>
   <p>Cerca il logo pagoPA nei bar, edicole, farmacie, ricevitorie, supermercati e tabaccherie convenzionati.</p>
   
-  
+  <img src="{{ url_for('static', filename='posta_privata.svg') }}" alt="Logo" width="40">
   <h3>Presso i punti di posta privata</h3>
   <p>Puoi pagare anche nelle agenzie che offrono servizi postali sul territorio.</p>
  </div>
