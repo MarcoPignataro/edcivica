@@ -8,7 +8,11 @@
 <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" width="200">
   <h1>Sei tu a scegliere dove pagare!</h1>
     <p>Con pagoPA puoi gestire i tuoi pagamenti verso la Pubblica Amministrazione in modo semplice e immediato, sui canali fisici e su quelli online: verifica le opzioni disponibili e scegli quelle più adatte alle tue esigenze.</p>
-  <h1>Paga con IO</h1>
+  <div style="display: flex; align-items: center;">
+  <h1 style="margin-right: 10px;">Paga con IO</h1>
+  <img src="{{ url_for('static', filename='io.png') }}" alt="Logo" width="75">
+  </div> 
+  
   <ul>
     <li>Usa i metodi di pagamento salvati nel tuo Portafoglio</li>
     <li>Scegli il gestore della transazione (PSP) a te più conveniente</li>
@@ -16,5 +20,11 @@
     <li>Controlla lo stato dei tuoi pagamenti</li>
     <li>Ricevi notifiche sui pagamenti in scadenza</li>
   </ul>
+  <div>
+    <h2>Informazioni aggiuntive</h2>
+    <p>Con pagoPA puoi effettuare pagamenti in modo sicuro e veloce.</p>
+    <img src="{{ url_for('static', filename='io.png') }}" alt="Logo" width="75">
+  </div>
+  
 
 {% endblock %}
