@@ -8,42 +8,77 @@
 <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" width="200">
 <h1>Paga come vuoi,
   quando vuoi!</h1>
+<h1>Vantaggi e Sicurezza</h1>
+<style>
+  <!--Aggiunto con w3 Schools--!>
+    .accordion {
+      width: 100%;
+      margin-bottom: 10px;
+    }
 
-<table border="2" style="border-collapse: collapse; width: 100%;">
-  <tr>
-    <td colspan="3" style="background-color:#1e90ff; color: white; border: 2px solid white; text-align: left; font-weight: bold;">
-      Vantaggi e Sicurezza
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 2px solid black; text-align: left; font-weight: bold;">
-      Per i cittadini
-    </td>
-    <td style="border: 2px solid black; text-align: left; font-weight: bold;">
-      Per le Pubbliche Amministrazioni
-    </td>
-    <td style="border: 2px solid black; text-align: left; font-weight: bold;">
-      Per i PSP
-    </td>
-  </tr>
-  <tr>
-    <td style="border: 2px solid black; vertical-align: top; padding: 10px;">
-      <p>Un sistema semplice e trasparente per i tuoi pagamenti verso le PA.</p> 
-      <p>pagoPA è la piattaforma nazionale che ti permette di scegliere, secondo le tue abitudini e preferenze</p>
-      <p>come pagare tributi,imposte o rette verso la Pubblica Amministrazione e altri soggetti aderenti</p>
-      <p>che forniscono servizi al cittadino.</p>
-    </td>
-    <td style="border: 2px solid black; vertical-align: top; padding: 10px;">
-      <p>pagoPA permette alle Pubbliche Amministrazioni di gestire gli incassi in modo centralizzato</p>
-      <p>offrendo servizi automatici di rendicontazione e riconciliazione con un significativo risparmio nei costi di gestione.</p>
-    </td>
-    <td style="border: 2px solid black; vertical-align: top; padding: 10px;">
-      <p>Con pagoPA, hai un accesso diretto al settore dei pagamenti per i servizi pubblici</p>
-      <p>e puoi promuovere la tua offerta multicanale da un'unica piattaforma</p>
-      <p>portando valore aggiunto a una vasta platea di nuovi utenti.</p>
-    </td>
-  </tr>
-</table>
-<p>Con pagoPA puoi gestire i tuoi pagamenti verso la Pubblica Amministrazione in modo semplice e immediato, sui canali fisici e su quelli online: verifica le opzioni disponibili
+    .accordion input[type="checkbox"] {
+      display: none;
+    }
+
+    .accordion-label {
+      display: block;
+      background-color: #109eff;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      font-size: 15px;
+      border: none;
+      text-align: left;
+      transition: 0.4s;
+    }
+
+    
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-out;
+      background-color: white;
+      padding: 0 18px;
+    }
+	.accordion input[type="checkbox"]:checked ~ .accordion-content {
+      max-height: 500px; /* imposta un'altezza sufficiente per il contenuto */
+      padding: 18px;
+    }
+    
+    
+</style>
+
+  <div class="accordion">
+    <input type="checkbox" id="section1">
+    <label class="accordion-label" for="section1">Per i cittadini</label>
+    <div class="accordion-content">
+      <p>pagoPA è un sistema semplice e trasparente per effettuare pagamenti verso la Pubblica Amministrazione. Consente di scegliere, secondo le proprie abitudini e preferenze, come pagare tributi, imposte o rette verso enti pubblici e soggetti aderenti che forniscono servizi al cittadino.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="section2">
+    <label class="accordion-label" for="section2">Per le Pubbliche Amministrazioni</label>
+    <div class="accordion-content">
+      <p>pagoPA permette una gestione centralizzata degli incassi, con servizi automatici di rendicontazione e riconciliazione, offrendo un notevole risparmio nei costi di gestione.</p>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <input type="checkbox" id="section3">
+    <label class="accordion-label" for="section3">Per i servizi pubblici</label>
+    <div class="accordion-content">
+      <p>Con pagoPA, hai un accesso diretto al settore dei pagamenti per i servizi pubblici
+        e puoi promuovere la tua offerta multicanale da un'unica piattaforma
+        portando valore aggiunto a una vasta platea di nuovi utenti.</p>
+    </div>
+  </div>
+
+<p>Con pagoPA puoi gestire i tuoi pagamenti verso la Pubblica Amministrazione in modo semplice e immediato, sui canali fisici e su quelli online: verifica le opzioni disponibili</p>
+<p>Sponsor Ufficiale di: Valtur Brindisi</p>
+<img src="{{ url_for('static', filename='brindisi.png') }}" alt="Logo" width="75">
+<p>Sponsor ufficiale di: US Lecce</p>
+<img src="{{ url_for('static', filename='lecce.png') }}" alt="Logo" width="75">
 <p>Grazie per aver scelto pagoPA!</p>
 {% endblock %}
